@@ -5,7 +5,7 @@ module.exports = app;
 app.use(express.json());
 const cors = require("cors");
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://fintek-wetherapp-1.onrender.com",
 };
 
 app.use(cors(corsOptions));

@@ -54,6 +54,8 @@
 @media all and (max-width: 1000px) {
   .btnPrimary {
     left: 40vw;
+    padding-inline: 2vw;
+    padding-block: 2vh;
 
   }
   .input{

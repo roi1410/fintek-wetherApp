@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/wetherCard.css";
 function WetherCard({ APIdata }) {
+  console.log(APIdata);
   return (
     <div className="wetherCard centerFlex ">
       <div className="wetherCardHederContainer">
@@ -31,7 +32,7 @@ function WetherCard({ APIdata }) {
       </div>
 
       <div className="hoursContainer">
-        {APIdata?.hour.map((elm, index) => {
+        {APIdata?.hour&&APIdata?.hour.map((elm, index) => {
           return (
             <div key={index} className="wetherDetailsBlock">
               <span className="lightFont">{elm?.time.substring(11, 16)}</span>

@@ -4,10 +4,11 @@ import { allContext } from "../context";
 
 function RightSide() {
   const { APIdata } = useContext(allContext);
+  console.log(APIdata);
   return (
     <div className="rightSideContainer centerFlex">
       <div className="blurCard">
-        {APIdata?.response?.data?.status !== 400 && APIdata !== null ? (
+        {APIdata?.status == 200 && APIdata !== null ? (
           <WetherCard APIdata={APIdata} />
         ) : null}
       </div>

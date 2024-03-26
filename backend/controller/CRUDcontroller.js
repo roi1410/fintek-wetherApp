@@ -12,9 +12,11 @@ if (parseInt(today) < 19) {
 
 async function fetchData(query) {
   try {
+    
     const response = await axios.get(
       `http://api.weatherapi.com/v1/forecast.json?key=343f7adfef5c4f6bb48133129242503&q=${query}&days=1&aqi=no&alerts=no`
     );
+  
 
     const { forecast, current, location } = response.data;
 
@@ -40,6 +42,7 @@ exports.sendWether = async (req, res) => {
     const { query } = req.query;
 
     const DataWether = await fetchData(query);
+  
     if (DataWether?.status === 200) {
       res.status(200).json(DataWether);
     } else if (DataWether?.status === 400) {

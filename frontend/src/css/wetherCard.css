@@ -1,0 +1,61 @@
+.wetherCard {
+  height: 80vh;
+  width: 25vw;
+  padding: 1vh;
+  background: black;
+  background: #27737d 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  /* fix border box shit */
+
+  
+  flex-direction: column;
+  
+  text-align: center;
+  gap: 3rem;
+}
+
+.wetherCardHederContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.skyDescription {
+  font-size: 1.5rem;
+  font-family: "HeeboThin";
+  color: #dde4e6;
+}
+
+.wetherCardTemp {
+  font-size: 5rem;
+  margin: 0;
+}
+.wetherDetails {
+  display: flex;
+  gap: 2rem;
+}
+.hoursContainer {
+  display: flex;
+  gap: 1rem;
+}
+.wetherDetailsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wetherCardHederContainer span{
+  font-size: 1.23rem;
+}
+
+@media all and (max-width: 1000px) {
+  .wetherCard{
+    width: 80%;
+    height: 90%;
+  }
+
+
+
+  
+
+  
+
+}

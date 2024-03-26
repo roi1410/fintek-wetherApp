@@ -1,0 +1,32 @@
+:root {
+  height: 100vh;
+  width: 100vw;
+}
+@font-face {
+  font-family: "HeeboBold";
+  src: url("./assets/fonts/HankenGrotesk-Medium.ttf");
+}
+@font-face {
+  font-family: "HeeboThin";
+  src: url("./assets/fonts/HankenGrotesk-Light.ttf");
+}
+@font-face {
+  font-family: "HeeboRegular";
+  src: url("./assets/fonts/HankenGrotesk-Regular.ttf");
+}
+
+.lightFont {
+  font-family: "HeeboThin";
+  color: #a8c6cb;
+  font-size: 0.8rem;
+}
+.Boldfont {
+  font-family: "HeeboBold";
+  color: #ffffff;
+}
+
+.lightRgular {
+  margin: 0;
+  font-family: "HeeboRegular";
+  color: #ffffff;
+}

@@ -1,0 +1,56 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* main backgrond =#F1F1F1
+shadow of wetherdisplay=#DDE4E6 
+wetherDisplay color=#27737D*
+font color=#FFFFFF
+
+*/
+
+.AppContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+  background: #f1f1f1;
+}
+.rightSideContainer {
+  height: 100%;
+}
+.centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftSideContainer {
+  box-sizing: border-box;
+  padding: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  align-items: start;
+}
+.blurCard {
+  height: 90%;
+  width: 90%;
+  background: #dde4e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (max-width: 1000px) {
+  .AppContainer {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .leftSideContainer {
+    gap: 0;
+  }
+  .blurCard {
+    width: 90%;
+    height: 100%;
+  }
+}

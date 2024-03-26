@@ -1,0 +1,65 @@
+.input {
+  background: #ffffff;
+  height: 9vh;
+  width: 100%;
+  border-radius: 10px;
+  border: #ffffff;
+  margin: 0;
+  font-size: large;
+  
+  
+}
+
+.btnPrimary {
+  width: fit-content;
+  padding-inline: 1.5vw;
+  padding-block: 2vh;
+  border: #046b3b;
+  border-radius: 10px;
+  background: #046b3b;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  left: 19vw;
+  bottom:  8vh;
+
+  font-family: "HeeboThin";
+}
+.leftSideContainer label span {
+  left: 5rem;
+  bottom: 3rem;
+  font-family: "HeeboThin";
+}
+.leftSideContainer label {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.leftSideContainer p {
+  /* UI Properties */
+  text-align: left;
+  font: 28pt/44pt "HeeboThin";
+  color: #707070;
+}
+.logo {
+  position: relative;
+  top: 0;
+  right: 2.5rem;
+}
+.error {
+  color: red;
+  white-space: nowrap;
+}
+@media all and (max-width: 1000px) {
+  .btnPrimary {
+    left: 40vw;
+
+  }
+  .input{
+    height: 6vh;
+  }
+  .leftSideContainer label{
+    width: 30vw;
+  }
+}

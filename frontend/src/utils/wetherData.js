@@ -4,7 +4,7 @@ export async function fetchWetherData(query) {
   try {
  
     const response = await axios.get(
-      `https://fintek-wetherapp.onrender.com/?query=${query}`
+      `https://fintek-wetherapp.onrender.com/api/wetherApp/sendDataWetherData?query=${query}`
     );
 
     return response.data;

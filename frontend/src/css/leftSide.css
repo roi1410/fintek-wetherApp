@@ -6,14 +6,14 @@
   border: #ffffff;
   margin: 0;
   font-size: large;
-  
-  
 }
 
 .btnPrimary {
-  width: fit-content;
+  height: fit-content;
+  padding-inline: 1vw;
   padding-inline: 1.5vw;
   padding-block: 2vh;
+
   border: #046b3b;
   border-radius: 10px;
   background: #046b3b;
@@ -21,7 +21,7 @@
   cursor: pointer;
   position: relative;
   left: 19vw;
-  bottom:  8vh;
+  top: -8vh;
 
   font-family: "HeeboThin";
 }
@@ -32,8 +32,7 @@
 }
 .leftSideContainer label {
   width: 25vw;
-  display: flex;
-  flex-direction: column;
+
   box-sizing: border-box;
 }
 .leftSideContainer p {
@@ -54,17 +53,15 @@
 @media all and (max-width: 1000px) {
   .btnPrimary {
     left: 40vw;
-    bottom: 12vw;
+    top: -7vh;
 
     padding-inline: 5vw;
     padding-block: 2vh;
-    
-
   }
-  .input{
+  .input {
     height: 6vh;
   }
-  .leftSideContainer label{
+  .leftSideContainer label {
     width: 30vw;
   }
 }

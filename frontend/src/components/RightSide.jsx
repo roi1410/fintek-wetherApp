@@ -4,7 +4,7 @@ import { allContext } from "../context";
 
 function RightSide() {
   const { APIdata } = useContext(allContext);
-  console.log(APIdata);
+
   return (
     <div className="rightSideContainer centerFlex">
       <div className="blurCard">

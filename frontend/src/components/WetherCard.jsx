@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/wetherCard.css";
 function WetherCard({ APIdata }) {
-  console.log(APIdata);
+
   return (
     <div className="wetherCard centerFlex ">
       <div className="wetherCardHederContainer">

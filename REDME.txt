@@ -1,0 +1,18 @@
+welcom to finteck wether app
+
+
+haw to run the project ?
+
+npm i in backend and npm i in frontend 
+then 
+node server.js in backend 
+npm run dev in frontend 
+
+
+
+API data flow
+
+from backend/controller/CRUDcontroler => the frontend/src/utils/wetherData =>..src/context=>..src/compnents/RightSide
+
+
+
